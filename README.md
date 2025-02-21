@@ -71,7 +71,7 @@ the build speed and development experience by using Vite and Turborepo.
 
    **This will set the EOL (End of line) character to be the same as on Linux/macOS. Without this, our bash script won't
    work, and you will have conflicts with developers on Linux/macOS.**
-2. Clone this repository.( ```git clone https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite``` )
+2. Clone this repository.( ```git clone https://github.com/leadpiggy/chrome-extension-boilerplate-react-vite``` )
 3. Ensure your node version is >= than in `.nvmrc` file, recommend to
    use [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#intro)
 4. Edit `/packages/i18n/locales/`{your locale(s)}/`messages.json`
@@ -86,25 +86,12 @@ Then, depending on the target browser:
 
 1. Run:
     - Dev: `pnpm dev` (on Windows, you should run as administrator;
-      see [issue#456](https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite/issues/456))
+      see [issue#456](https://github.com/leadpiggy/chrome-extension-boilerplate-react-vite/issues/456))
     - Prod: `pnpm build`
 2. Open in browser - `chrome://extensions`
 3. Check - <kbd>Developer mode</kbd>
 4. Click - <kbd>Load unpacked</kbd> in the upper left corner
 5. Select the `dist` directory from the boilerplate project
-
-### For Firefox: <a name="getting-started-firefox"></a>
-
-1. Run:
-    - Dev: `pnpm dev:firefox`
-    - Prod: `pnpm build:firefox`
-2. Open in browser - `about:debugging#/runtime/this-firefox`
-3. Click - <kbd>Load Temporary Add-on...</kbd> in the upper right corner
-4. Select the `./dist/manifest.json` file from the boilerplate project
-
-> [!NOTE]
-> In Firefox, you load add-ons in temporary mode. That means they'll disappear after each browser close. You have to
-> load the add-on on every browser launch.
 
 ## Install dependency for turborepo: <a name="install-dependency"></a>
 
